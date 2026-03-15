@@ -1,0 +1,394 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.work-sans-font{
+    font-family: "work Sans", "sans-serif";
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+/* shared style */
+
+.display_flex{
+    display: flex;
+}
+.text_gray{
+    color: #424242;
+}
+
+.text_light_gray{
+    color: #737373;
+}
+.bg_light{
+
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+.btn_primary{
+    background-color: #ff900e;
+    color: white;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+
+}
+
+.btn_primary:hover{
+    background-color: #ff5e00;
+    cursor: pointer;
+    box-shadow: 0px 5px 15px #ff5e00 ;
+}
+
+.text_primary{
+    color: #ff900e;
+}
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+main section{
+    margin-top: 100px;
+}
+
+.content_center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* header style  */
+
+
+
+
+/* navbar style  */
+
+.navbar{
+    justify-content: space-between;
+    align-items: centeri;
+    
+}
+
+.nav_item{
+    list-style: none;
+    margin-right: 30px;
+     height: 80px;
+    width: 80px;
+
+}
+.brand{
+    font-weight: 700;
+    font-size: 3rem;
+
+}
+.nav_link{
+    text-decoration: none;
+    font-weight: 500;
+   
+
+
+}
+.nav_item:hover{
+    background-color: #ff900e;
+    color: #fff;
+}
+
+.navbar, .bannar{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+
+
+/* banner style  */
+
+.banner_content{
+    max-width: 780px;
+    margin: 20px auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.banner_title{
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.banner_image{
+    width: 100%;
+}
+
+
+
+
+/* team and features CSS  */
+
+.teams{
+    /* align-items: center; */
+}
+
+
+.teams .team_img_cont{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+.teams img{
+    /* max-width: 100%; */
+    /* justify-self: centers; */
+}
+
+.teams .our_features{
+    margin-left: 80px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.teams .our_features span{
+    font-weight: bolder;
+}
+
+
+
+.some_facts{
+    gap: 30px;
+}
+
+
+.some_facts .feture_img {
+    max-width: 50%;
+    position: relative;
+
+}
+
+.some_facts .feture_img .psudo{
+    position: absolute;
+    background-color: rgb(240, 171, 12);
+    padding: 15px 50px;
+    width: 200px;
+    margin-top: -80px;
+    margin-left: -20px;
+    font-weight: bolder;
+    color: #fff;
+    border-radius: 10px;
+    
+}
+
+
+
+
+.some_facts .fetures{
+    height: 180px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: aliceblue;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+
+
+.facts_section{
+    padding: 10px 30px;
+}
+.facts_section .facts{
+    justify-content: space-around;
+
+}
+
+.facts_section .fact{
+    width: 25%;
+    margin: 20px;
+    border: 1px solid red;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.sponsors_section .sponsors{
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+
+
+
+
+.sponsors_section .sponsor img{
+    max-width: 15vw;
+}
+
+
+footer{
+    background-color: #42424299;
+    height: 100px;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive media query */
+@media screen and (max-width:576px) {
+    
+    *{
+        overflow: hidden;
+    }
+
+    .navbar{
+        flex-direction: column-reverse;
+        color: red;
+    }
+
+    header .navbar h3{
+        font-size: 30px;
+    }
+
+    .banner_content{
+        max-width: 100vw;
+        margin: 0;
+    }
+    .banner_title{
+        font-size: 20px;
+    }
+    .nav_item{
+        margin: 10px;
+    }
+    img{
+        margin-top: 20px;
+    }
+    .btn_primary{
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+
+    .facts_section .facts {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+   
+
+
+}
+
+
+
+@media screen and (max-width:1024px) {
+
+ .teams{
+        flex-direction: column;
+    }
+    .teams .our_features{
+        margin: 30px ;
+    }
+    
+    .some_facts{
+        flex-direction: column-reverse;
+    }
+
+
+    .facts_section .fact p{
+        margin: 0;
+        font-size: small;
+    }
+    
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
